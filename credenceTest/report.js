@@ -1,14 +1,8 @@
 //import app.js file
 const jsonData = require("./app");
 const handlebars = require('handlebars');
-const app = require('express')();
 const fs = require('fs');
 const path = require('path');
-
-//setting views directory to views folder
-app.set('views', path.join(__dirname,"views"));
-//setting view engine as handlebars
-app.set("view engine", "hbs");
 
 const Path = path.resolve(__dirname,'downloads','report.html');
 
